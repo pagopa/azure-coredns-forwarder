@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   azure-core-dns:
+    # image: ghcr.io/pagopa/azure-core-dns:beta-setup-azure-core-dns
     build:
       dockerfile: ./Dockerfile
       context: .

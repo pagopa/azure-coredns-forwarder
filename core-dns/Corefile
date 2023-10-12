@@ -1,5 +1,6 @@
 .:53 {
     errors
+    log
     ready
     health
     forward . 168.63.129.16
