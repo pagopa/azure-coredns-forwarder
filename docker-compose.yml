@@ -1,10 +1,10 @@
 version: "3.8"
 services:
-  status:
+  azure-core-dns:
     build:
       dockerfile: ./Dockerfile
       context: .
-    container_name: status
+    container_name: azure-core-dns
     restart: always
     ports:
-      - "8000:8000"
+      - "53:53"
