@@ -1,10 +1,12 @@
 version: "3.8"
 services:
-  status:
-    build:
-      dockerfile: ./Dockerfile
-      context: .
-    container_name: status
-    restart: always
+  azure-core-dns:
+    # image: ghcr.io/pagopa/azure-core-dns:beta-setup-azure-core-dns
+    image: azurecoredns:latest
+    # build:
+    #   dockerfile: ./Dockerfile
+    #   context: .
+    container_name: azure-core-dns
+    # restart: always
     ports:
-      - "8000:8000"
+      - "53:53"
