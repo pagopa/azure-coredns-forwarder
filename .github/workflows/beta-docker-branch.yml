@@ -1,4 +1,4 @@
-name: Beta docker on dev branch
+name: Beta docker release on dev branch
 
 on:
   push:
