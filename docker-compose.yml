@@ -2,10 +2,10 @@ version: "3.8"
 services:
   azure-coredns-forwarder:
     # image: ghcr.io/pagopa/azure-core-dns:beta-setup-azure-core-dns
-    image: azurecorednsforwarder:latest
-    # build:
-    #   dockerfile: ./Dockerfile
-    #   context: .
+    # image: azurecorednsforwarder:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: .
     container_name: azure-coredns-forwarder
     # restart: always
     ports:
