@@ -1,4 +1,4 @@
-FROM coredns/coredns:1.11.1@sha256:2169b3b96af988cf69d7dd69efbcc59433eb027320eb185c6110e0850b997870
+FROM coredns/coredns:1.12.0@sha256:40384aa1f5ea6bfdc77997d243aec73da05f27aed0c5e9d65bfa98933c519d97
 
 COPY ./coredns/Corefile /app/conf/Corefile
 
